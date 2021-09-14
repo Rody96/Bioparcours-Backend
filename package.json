@@ -1,0 +1,23 @@
+{
+  "name": "bioparcours-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rody96/Bioparcours-Backend.git"
+  },
+  "author": "Rodrigue Mugisha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rody96/Bioparcours-Backend/issues"
+  },
+  "homepage": "https://github.com/Rody96/Bioparcours-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
