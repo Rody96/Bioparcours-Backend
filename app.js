@@ -7,7 +7,7 @@ require('dotenv').config();
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));
 var database, collection;
-const port = 3000              
+const port = process.env.PORT || 3000              
 
 app.listen(port, () => {
     MongoClient.connect(process.env.CONNECTION_URL, { useNewUrlParser: true }, (error, client) => {
