@@ -30,7 +30,7 @@ app.get("/map", (request, response) => {
 });
 
 app.get("/map/:id", (request, response) => {
-    collection.findOne({ "_id": request.params.id }, (error, result) => {
+    collection.findOne({ "id": request.params.id }, (error, result) => {
         if(error) {
             return response.status(500).send(error);
         }
