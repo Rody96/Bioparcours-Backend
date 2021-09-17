@@ -1,11 +1,22 @@
 const express = require('express');
 const BodyParser = require("body-parser");
+const cors = require("cors");
 const MongoClient = require("mongodb").MongoClient;
 
 const app = express();
 require('dotenv').config();
+/////////////BODY PARSER/////////////////////////////////////////////////
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));
+////////////////////////////////////////////////////////////////////////
+
+/////////////// CORS /////////////////
+const corsConfig = {
+    credentials: true,
+    origin: true,
+  };
+  app.use(cors(corsConfig));
+//////////////////////////////////////
 var database, collection;
 const port = process.env.PORT || 3000              
 
